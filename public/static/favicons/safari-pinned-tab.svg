@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 1416.667px;
+        text-anchor: middle;
+        font-family: Barlow;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+  <text id="A" class="cls-1" x="499.34" y="996.119"><tspan x="499.34">A</tspan></text>
+</svg>
