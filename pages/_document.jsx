@@ -20,7 +20,6 @@ class Mydocument extends Document {
           {/* Manifest and incons */}
           <link rel='manifest' href='/static/favicons/site.webmanifest' />
           <link rel='shortcut icon' href='/static/favicons/favicon.ico' />
-          <meta content='#ffffff' name='theme-color' />
           <link
             href='/static/favicons/favicon-32x32.png'
             rel='icon'
