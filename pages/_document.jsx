@@ -15,6 +15,7 @@ class Mydocument extends Document {
             type='font/woff2'
             crossOrigin='anonymous'
           />
+          <meta name='yandex-verification' content='45a4bd5578b6fb90' />
 
           {/* Manifest and incons */}
           <link rel='manifest' href='/static/favicons/site.webmanifest' />
@@ -32,7 +33,7 @@ class Mydocument extends Document {
             sizes='16x16'
             type='image/png'
           />
-          <meta content='#ffffff' name='theme-color' />
+          <meta name='theme-color' content='#0d1117' />
 
           {/* Apple */}
           <link
