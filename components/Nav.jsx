@@ -30,17 +30,14 @@ export default function Nav() {
   }, [router.pathname])
 
   return (
-    <div
-      className='sticky-nav shadow-sm'
-      style={{ borderBottom: '1px solid rgba(255,255,255, 0.1)' }}
-    >
+    <div className='sticky-nav'>
       <nav className='hidden bg-blury md:flex justify-between items-center my-0 py-5 px-7 w-full max-w-6xl mx-auto'>
         <div className='flex justify-between items-center'>
           <Link href='/'>
             <a
-              className={`inline-block font-medium text-gray-800 dark:text-gray-100 rounded-md px-4 mr-1 py-2 hover:bg-brand-blue hover:bg-opacity-20 ${
+              className={`inline-block font-medium text-gray-800 dark:text-gray-100 rounded-md px-4 mr-1 py-2 hover:bg-primary-color hover:bg-opacity-20 ${
                 activePath === '/'
-                  ? 'text-brand-blue dark:text-brand-blue'
+                  ? 'text-primary-color dark:text-primary-color'
                   : null
               }`}
             >
@@ -49,9 +46,9 @@ export default function Nav() {
           </Link>
           <Link href='/blog'>
             <a
-              className={`inline-block font-medium text-gray-800 dark:text-gray-100 rounded-md px-4 mr-1 py-2 hover:bg-brand-blue hover:bg-opacity-20 ${
+              className={`inline-block font-medium text-gray-800 dark:text-gray-100 rounded-md px-4 mr-1 py-2 hover:bg-primary-color hover:bg-opacity-20 ${
                 activePath === '/blog'
-                  ? 'text-brand-blue dark:text-brand-blue'
+                  ? 'text-primary-color dark:text-primary-color'
                   : null
               }`}
             >
@@ -60,9 +57,9 @@ export default function Nav() {
           </Link>
           <Link href='/about'>
             <a
-              className={`inline-block font-medium text-gray-800 dark:text-gray-100 rounded-md px-4 mr-1 py-2 hover:bg-brand-blue hover:bg-opacity-20 ${
+              className={`inline-block font-medium text-gray-800 dark:text-gray-100 rounded-md px-4 mr-1 py-2 hover:bg-primary-color hover:bg-opacity-20 ${
                 activePath === '/about'
-                  ? 'text-brand-blue dark:text-brand-blue'
+                  ? 'text-primary-color dark:text-primary-color'
                   : null
               }`}
             >
@@ -122,7 +119,7 @@ export default function Nav() {
               )}
             </button>
 
-            <h3 className='ml-3 pl-1 text-xl font-medium text-gray-700 dark:text-gray-300'>
+            <h3 className='ml-3 pl-1 font-medium text-gray-700 dark:text-gray-300'>
               {currentRoute}
             </h3>
           </div>
@@ -137,9 +134,9 @@ export default function Nav() {
             <li className='w-full text-center'>
               <Link href='/'>
                 <a
-                  className={`inline-block my-2 p-2 text-gray-700 dark:text-gray-200 hover:bg-brand-blue hover:text-white dark:hover:bg-opacity-20 rounded w-full font-bold text-2xl ${
+                  className={`inline-block my-2 p-2 text-gray-700 dark:text-gray-200 hover:bg-primary-color hover:text-white dark:hover:bg-opacity-20 rounded w-full font-bold text-2xl ${
                     activePath === '/'
-                      ? 'text-brand-blue  dark:text-brand-blue'
+                      ? 'text-primary-color  dark:text-primary-color'
                       : null
                   }`}
                   onClick={() => setIsMenuExpanded(false)}
@@ -151,9 +148,9 @@ export default function Nav() {
             <li className='w-full text-center'>
               <Link href='/about'>
                 <a
-                  className={`inline-block my-2 p-2 text-gray-700 dark:text-gray-200 hover:bg-brand-blue hover:text-white dark:hover:bg-opacity-20 rounded w-full font-bold text-2xl ${
+                  className={`inline-block my-2 p-2 text-gray-700 dark:text-gray-200 hover:bg-primary-color hover:text-white dark:hover:bg-opacity-20 rounded w-full font-bold text-2xl ${
                     activePath === '/about'
-                      ? 'text-brand-blue  dark:text-brand-blue'
+                      ? 'text-primary-color  dark:text-primary-color'
                       : null
                   }`}
                   onClick={() => setIsMenuExpanded(false)}
@@ -165,9 +162,9 @@ export default function Nav() {
             <li className='w-full text-center'>
               <Link href='/blog'>
                 <a
-                  className={`inline-block my-2 p-2 text-gray-700 dark:text-gray-200 hover:bg-brand-blue hover:text-white dark:hover:bg-opacity-20 rounded w-full font-bold text-2xl ${
+                  className={`inline-block my-2 p-2 text-gray-700 dark:text-gray-200 hover:bg-primary-color hover:text-white dark:hover:bg-opacity-20 rounded w-full font-bold text-2xl ${
                     activePath === '/blog'
-                      ? 'text-brand-blue  dark:text-brand-blue'
+                      ? 'text-primary-color  dark:text-primary-color'
                       : null
                   }`}
                   onClick={() => setIsMenuExpanded(false)}

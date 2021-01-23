@@ -11,21 +11,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dark: '#0d1117',
-        'brand-blue': '#1992d4'
+        'primary-color': '#1992d4',
+        'dark-primary': '#0d1117',
+        'dark-secondary': '#161b22'
       },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans]
-      },
-      borderWidth: {
-        DEFAULT: '1px',
-        0: '0',
-        1: '1px',
-        2: '2px',
-        3: '3px',
-        4: '4px',
-        6: '6px',
-        8: '8px'
       }
     }
   },

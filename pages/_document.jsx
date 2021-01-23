@@ -53,7 +53,7 @@ class Mydocument extends Document {
             content='/static/favicons/browserconfig.xml'
           />
         </Head>
-        <body className='bg-white text-gray-900 dark:bg-dark dark:text-gray-50'>
+        <body className='bg-white text-gray-900 dark:bg-dark-primary dark:text-gray-50'>
           <Main />
           <NextScript />
         </body>

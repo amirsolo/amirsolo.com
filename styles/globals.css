@@ -22,6 +22,7 @@ html {
   position: sticky;
   z-index: 10;
   top: 0;
+  @apply border-b border-gray-50 dark:border-gray-800;
 }
 
 #__next {
@@ -33,5 +34,5 @@ html {
 .bg-blury {
   backdrop-filter: saturate(180%) blur(20px);
   transition: background-color 0.1 ease-in-out;
-  @apply bg-white dark:bg-dark bg-opacity-70 dark:bg-opacity-70;
+  @apply bg-white dark:bg-dark-primary bg-opacity-70 dark:bg-opacity-70;
 }
