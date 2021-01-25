@@ -82,7 +82,7 @@ export default function Home() {
 
         <Devider />
 
-        <div className='? my-14'>????????</div>
+        <div className='projects my-14'>????????</div>
       </div>
     </Container>
   )

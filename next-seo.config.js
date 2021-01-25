@@ -1,5 +1,5 @@
 const title = 'Amir Solo - Software developer'
-const description = 'Software developer, Creator, JavaScript enthusiast,'
+const description = 'Software developer, Creator, JavaScript enthusiast.'
 
 const SEO = {
   title,
