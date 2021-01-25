@@ -15,7 +15,7 @@ class Mydocument extends Document {
             type='font/woff2'
             crossOrigin='anonymous'
           />
-          <meta name='yandex-verification' content='45a4bd5578b6fb90' />
+          <meta name='yandex-verification' content='c180f25418c9d98a' />
 
           {/* Manifest and incons */}
           <link rel='manifest' href='/static/favicons/site.webmanifest' />
