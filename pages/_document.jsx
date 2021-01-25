@@ -52,8 +52,26 @@ class Mydocument extends Document {
             name='msapplication-config'
             content='/static/favicons/browserconfig.xml'
           />
+
+          {/* Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=G-QF0D47Y1VH`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-QF0D47Y1VH', {
+                  page_path: window.location.pathname,
+                });
+              `
+            }}
+          />
         </Head>
-        <body className='bg-white text-gray-900 dark:bg-dark-primary dark:text-gray-50'>
+        <body className='bg-gray-50 text-gray-900 dark:bg-dark-primary dark:text-gray-50'>
           <Main />
           <NextScript />
         </body>

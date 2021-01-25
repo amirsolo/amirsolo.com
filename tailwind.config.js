@@ -1,7 +1,8 @@
 const {
   backgroundColor,
   backgroundOpacity,
-  borderWidth
+  borderWidth,
+  margin
 } = require('tailwindcss/defaultTheme')
 const defaultTheme = require('tailwindcss/defaultTheme')
 
@@ -23,7 +24,8 @@ module.exports = {
   variants: {
     extend: {
       backgroundColor: ['responsive', 'hover'],
-      backgroundOpacity: ['dark', 'hover']
+      backgroundOpacity: ['dark', 'hover'],
+      margin: ['last']
     }
   },
   plugins: []

@@ -13,7 +13,7 @@ export default function Container({ children, ...customMeta }) {
   }
 
   return (
-    <div className='bg-white dark:bg-dark-primary'>
+    <div className='bg-gray-50 dark:bg-dark-primary'>
       <Head>
         <title>{meta.title}</title>
         <meta name='robots' content='follow, index' />
@@ -37,7 +37,7 @@ export default function Container({ children, ...customMeta }) {
         )}
       </Head>
       <Nav />
-      <main className='flex flex-col justify-center bg-white dark:bg-dark-primary max-w-4xl mx-auto my-5 py-3 md:py-5 px-7 sm:px-6 md:px-5 '>
+      <main className='flex flex-col justify-center bg-gray-50 dark:bg-dark-primary max-w-3xl mx-auto py-10 px-7 sm:px-6 md:px-5'>
         {children}
       </main>
     </div>

@@ -30,8 +30,8 @@ export default function Nav() {
   }, [router.pathname])
 
   return (
-    <div className='sticky-nav'>
-      <nav className='hidden bg-blury md:flex justify-between items-center my-0 py-5 px-7 w-full max-w-6xl mx-auto'>
+    <div className='sticky-nav border-b border-gray-100 dark:border-gray-900'>
+      <nav className='hidden bg-blury md:flex justify-between items-center my-0 py-5 px-7 w-full max-w-4xl mx-auto'>
         <div className='flex justify-between items-center'>
           <Link href='/'>
             <a
