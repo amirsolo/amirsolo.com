@@ -18,7 +18,7 @@ export default function NotFound() {
           Can you double check the URL?
         </p>
         <Link href='/'>
-          <a className='w-40 p-2 sm:px-4 sm:py-3 mt-12 font-semibold mx-auto text-center rounded border text-gray-800 dark:text-gray-300 border-gray-300 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-dark-secondary'>
+          <a className='w-40 p-2 sm:px-4 sm:py-3 mt-12 font-semibold mx-auto text-center rounded border text-gray-800 dark:text-gray-300 border-gray-300 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-dark-secondary'>
             Back Home
           </a>
         </Link>

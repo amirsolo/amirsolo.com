@@ -71,7 +71,7 @@ export default function Nav() {
         <ToggleButton mounted={mounted} theme={theme} setTheme={setTheme} />
       </nav>
 
-      {/* what ever for mobile */}
+      {/* Mobile Nav (Burger menu) */}
       <nav className='mobile-menu my-0 md:hidden bg-blury'>
         <div className='upper-menu flex flex-row justify-between items-center py-4 px-7'>
           <div className='right-part flex flex-row justify-between items-center'>

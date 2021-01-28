@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Container from '@/components/Container'
 import SocialLinks from '@/components/SocialLinks'
 import BlogCard from '@/components/BlogCard'
+import ProjectCard from '@/components/ProjectCard'
 import Devider from '@/components/Devider'
 
 export default function Home() {
@@ -35,7 +36,7 @@ export default function Home() {
             <a
               target='_blank'
               rel='noopener noreferrer'
-              href='https://twitter.com/theamirsolo'
+              href='https://www.youtube.com/channel/UCL0xUrtfYJfUqpDejChZovg/videos'
               className='text-primary-color'
             >
               Youtube.
@@ -50,7 +51,7 @@ export default function Home() {
               Github.
             </a>
           </p>
-          <p className=' sm:font-medium text-gray-700 dark:text-gray-300 mt-2 mb-10'>
+          <p className='sm:font-medium text-gray-700 dark:text-gray-300 mt-2 mb-10'>
             <Link href='/about'>
               <a className='text-primary-color'>
                 <span>More about me</span>
@@ -84,7 +85,7 @@ export default function Home() {
         <Devider />
 
         <div className='Blog py-14'>
-          <h2 className='text-3xl mb-3 font-semibold text-gray-800 dark:text-gray-300'>
+          <h2 className='text-2xl sm:text-3xl mb-3 font-semibold text-gray-800 dark:text-gray-300'>
             Recent Posts
           </h2>
           <BlogCard
@@ -112,7 +113,23 @@ export default function Home() {
 
         <Devider />
 
-        <div className='projects my-14'>????????</div>
+        <div className='projects my-14'>
+          <h2 className='flex flex-row items-center text-2xl sm:text-3xl mb-3 font-semibold text-gray-800 dark:text-gray-300'>
+            Projects
+          </h2>
+          <ProjectCard
+            title='Bookimy'
+            logo='/static/images/projects/bookimy-logo.png'
+            description="A powerful and opinionated journaling app I'm making with NodeJS and React. Try it It will make your life easier."
+            slug='bookimy'
+          />
+          <ProjectCard
+            title='Youtube'
+            logo='/static/images/projects/youtube-logo.png'
+            description='I make videos on youtube about software development and the process I go through to make an app.'
+            slug='youtube'
+          />
+        </div>
       </div>
     </Container>
   )

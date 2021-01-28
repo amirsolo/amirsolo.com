@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 class Mydocument extends Document {
   render() {
     return (
-      <Html lang='en'>
+      <Html lang='en' className='dark'>
         <Head>
           {/* General  */}
           <meta charSet='UTF-8' />
@@ -31,7 +31,7 @@ class Mydocument extends Document {
             sizes='16x16'
             type='image/png'
           />
-          <meta name='theme-color' content='#0d1117' />
+          <meta name='theme-color' content='#161b22' />
           {/* Apple */}
           <link
             href='/static/favicons/apple-touch-icon.png'
