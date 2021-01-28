@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Nav from '@/components/Nav'
+import Footer from '@/components/Footer'
 
 export default function Container({ children, ...customMeta }) {
   const router = useRouter()
@@ -40,6 +41,7 @@ export default function Container({ children, ...customMeta }) {
       <main className='flex flex-col justify-center bg-gray-50 dark:bg-dark-primary max-w-3xl mx-auto py-10 px-7 sm:px-6 md:px-5'>
         {children}
       </main>
+      <Footer />
     </div>
   )
 }

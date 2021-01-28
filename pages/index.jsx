@@ -36,7 +36,7 @@ export default function Home() {
             <a
               target='_blank'
               rel='noopener noreferrer'
-              href='https://www.youtube.com/channel/UCL0xUrtfYJfUqpDejChZovg/videos'
+              href='https://www.youtube.com/channel/UCL0xUrtfYJfUqpDejChZovg'
               className='text-primary-color'
             >
               Youtube.
