@@ -31,7 +31,7 @@ class Mydocument extends Document {
             sizes='16x16'
             type='image/png'
           />
-          <meta name='theme-color' content='#111827' />
+          <meta name='theme-color' content='#161b22' />
           {/* Apple */}
           <link
             href='/static/favicons/apple-touch-icon.png'
