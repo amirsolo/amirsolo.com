@@ -18,14 +18,14 @@ const About = () => {
           </p>
           <div className='flex flex-row justify-center items-center my-10 '>
             <video
-              poster='/static/me-poster.png'
+              muted
               autoPlay
               loop
               className='rounded-lg w-64 md:w-96 shadow-2xl'
             >
               <source src='/static/me.webm' type='video/webm' />
               <source src='/static/me.mp4' type='video/mp4' />
-              <p>Your browser doesn't support HTML5 video tag!</p>
+              <p>Sorry, your browser doesn't support embedded videos!</p>
             </video>
           </div>
         </div>
