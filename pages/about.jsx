@@ -6,18 +6,28 @@ const About = () => {
   return (
     <Container title='About me - Amir Solo'>
       <div className='about-page'>
-        <h1 className='text-2xl font-bold text-gray-700'>About Me</h1>
+        <h1 className='text-2xl font-bold text-gray-700 dark:text-gray-300'>
+          About Me
+        </h1>
         <div>
-          <p></p>
-          {/* <Image
-            src='/static/images/avatar-wide.jpg'
-            width={2184}
-            height={1440}
-            className='rounded-md'
-          /> */}
-          <video autoPlay loop className='rounded-2xl'>
-            <source src='/static/me.mp4' type='video/mp4' />
-          </video>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A adipisci,
+            consequuntur eos, eaque animi quae fugiat officiis hic quam earum
+            expedita temporibus dolor distinctio eveniet cupiditate quis qui
+            voluptate maiores!
+          </p>
+          <div className='flex flex-row justify-center items-center my-10 '>
+            <video
+              poster='/static/me-poster.png'
+              autoPlay
+              loop
+              className='rounded-lg w-64 md:w-96 shadow-2xl'
+            >
+              <source src='/static/me.webm' type='video/webm' />
+              <source src='/static/me.mp4' type='video/mp4' />
+              <p>Your browser doesn't support HTML5 video tag!</p>
+            </video>
+          </div>
         </div>
       </div>
     </Container>
