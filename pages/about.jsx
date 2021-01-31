@@ -1,43 +1,7 @@
 import Link from 'next/link'
 import Container from '@/components/Container'
-
-const ExternalLink = ({ className, href, children }) => (
-  <a
-    className={`text-primary-color ${className && className}`}
-    target='_blank'
-    rel='noopener noreferrer'
-    href={href}
-  >
-    {children}
-  </a>
-)
-
-const Item = ({ title, children }) => {
-  return (
-    <div className='mb-5 ml-2 md:ml-3'>
-      <div className='flex items-center mb-2 text-green-700 dark:text-green-300'>
-        <span className='sr-only'>Item</span>
-        <svg className='h-4 w-4 mr-2' viewBox='0 0 24 24'>
-          <g
-            fill='none'
-            stroke='currentColor'
-            strokeWidth='2'
-            strokeLinecap='round'
-            strokeLinejoin='round'
-          >
-            <path d='M22 11.08V12a10 10 0 11-5.93-9.14' />
-            <path d='M22 4L12 14.01l-3-3' />
-          </g>
-        </svg>
-
-        <p className='text-lg font-medium text-gray-800 dark:text-gray-200'>
-          {title}
-        </p>
-      </div>
-      <p className='text-gray-700 dark:text-gray-400 ml-6'>{children}</p>
-    </div>
-  )
-}
+import Item from '@/components/Item'
+import ExternalLink from '@/components/ExternalLink'
 
 const About = () => {
   return (
@@ -53,7 +17,7 @@ const About = () => {
           great passion for making different things. That's why I spend a lot of
           time building software and apps.
           <br />
-          And I spend my free time working out, playing basketball and watching
+          And I spend my free time playing basketball, working out, and watching
           Youtube and{' '}
           <ExternalLink href='https://www.imdb.com/title/tt0108778/'>
             Friends.
@@ -78,7 +42,7 @@ const About = () => {
         <p className='md:text-lg text-gray-700 dark:text-gray-300'>
           Feel free to email me at{' '}
           <ExternalLink
-            // className='text-base'
+            className='inline-block mb-2 md:mb-0'
             href='mailto:theamirsolo@gmail.com'
           >
             me@amirsolo.com
@@ -88,10 +52,10 @@ const About = () => {
           <ExternalLink href='https://twitter.com/theamirsolo'>
             Twitter{' '}
           </ExternalLink>
-          where I talk about development and ideas that I find interesting.
+          where I talk about development and ideas that interests me.
         </p>
         <div className='socials flex flex-row mt-5'>
-          <ExternalLink className='mr-4' href='https://twitter.com/theamirsolo'>
+          <ExternalLink className='mr-5' href='https://twitter.com/theamirsolo'>
             <span className='sr-only'>Twitter</span>
             <svg
               viewBox='0 0 512 512'
@@ -104,7 +68,7 @@ const About = () => {
           </ExternalLink>
 
           <ExternalLink
-            className='mr-4'
+            className='mr-5'
             href='https://www.youtube.com/channel/UCL0xUrtfYJfUqpDejChZovg'
           >
             <span className='sr-only'>Youtube</span>
@@ -118,7 +82,7 @@ const About = () => {
               <path d='m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm159.960938 256.261719s0 51.917969-6.585938 76.953125c-3.691406 13.703125-14.496094 24.507812-28.199219 28.195312-25.035156 6.589844-125.175781 6.589844-125.175781 6.589844s-99.878906 0-125.175781-6.851562c-13.703125-3.6875-24.507813-14.496094-28.199219-28.199219-6.589844-24.769531-6.589844-76.949219-6.589844-76.949219s0-51.914062 6.589844-76.949219c3.6875-13.703125 14.757812-24.773437 28.199219-28.460937 25.035156-6.589844 125.175781-6.589844 125.175781-6.589844s100.140625 0 125.175781 6.851562c13.703125 3.6875 24.507813 14.496094 28.199219 28.199219 6.851562 25.035157 6.585938 77.210938 6.585938 77.210938zm0 0' />
             </svg>
           </ExternalLink>
-          <ExternalLink className='mr-4' href='https://github.com/amirsolo'>
+          <ExternalLink className='mr-5' href='https://github.com/amirsolo'>
             <span className='sr-only'>Github</span>
             <svg
               fill='currentColor'
@@ -130,7 +94,7 @@ const About = () => {
             </svg>
           </ExternalLink>
           <ExternalLink
-            className='mr-4'
+            className='mr-5'
             href='https://www.linkedin.com/in/amirsolo/'
           >
             <span className='sr-only'>Linkedin</span>
@@ -150,29 +114,75 @@ const About = () => {
         <h2 className='text-3xl mb-5 font-bold text-gray-700 dark:text-gray-300'>
           Activities
         </h2>
+
+        <Item title='I make videos on Youtube'>
+          In my{' '}
+          <ExternalLink href='https://www.youtube.com/channel/UCL0xUrtfYJfUqpDejChZovg'>
+            channel
+          </ExternalLink>{' '}
+          I share some ideas and knowledge I learn throughout the process of
+          making software, combined with a bit entertaiment.
+        </Item>
         <Item title='I write'>
           I write on my{' '}
           <Link href='/blog'>
             <a className='text-primary-color'>blog. </a>
           </Link>
-          It's one of the best ways to keep track of software development. This
-          way I can document whatever I learn as a blog post which I can easily
-          refer to later.
-        </Item>
-        <Item title='I make videos on Youtube'>
-          In my{' '}
-          <ExternalLink href='https://www.youtube.com/channel/UCL0xUrtfYJfUqpDejChZovg'>
-            <a className='text-primary-color'>channel</a>
-          </ExternalLink>{' '}
-          I share some ideas and knowledge I learn throughout the process of
-          making software combined with a bit entertaiment.
+          It's one of the best ways to keep track of software development and
+          document whatever I learn as a blog post which I can easily refer to
+          later.
         </Item>
         <Item title='I build apps'>
           I'm usually building in the open. You can checkout my work on{' '}
           <ExternalLink href='https://github.com/amirsolo'>
-            <a className='text-primary-color'>Github.</a>
+            Github.
           </ExternalLink>{' '}
         </Item>
+      </div>
+
+      <div className='tech-stack my-10'>
+        <h2 className='text-3xl font-bold text-gray-700 dark:text-gray-300'>
+          Tech stack
+        </h2>
+        <h3 className='mb-5 my-1 text-gray-700 dark:text-gray-400'>
+          The teck stack I currently use for making apps: (for nerds!)
+        </h3>
+        <Item title='React'>
+          <ExternalLink href='https://reactjs.org'>React</ExternalLink> is a
+          JavaScript library for building user interfaces. It's fast, efficient
+          and easy to use. I started using it in 2016 and loved it ever since.
+        </Item>
+        <Item title='Next.js'>
+          <ExternalLink href='https://nextjs.org'>Next.js</ExternalLink> is a
+          React framework. "THE React framework" as they call it, and they are
+          not wrong, It's my default choice when making apps with React.
+        </Item>
+        <Item title='Node.js'>
+          <ExternalLink href='https://nodejs.org'>Node.js</ExternalLink> is a
+          JavaScript runtime. I use it with{' '}
+          <ExternalLink href='https://expressjs.com/'>Express</ExternalLink>{' '}
+          (which is a Node.js framework) for building back-ends and APIs.
+        </Item>
+
+        <Link href='/uses'>
+          <a className='inline-block font-medium mt-1 p-1 text-primary-color border-b border-primary-color'>
+            Full list
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              fill='currentColor'
+              viewBox='0 0 492.004 492.004'
+              className='inline-block w-3 h-3 ml-2 text-primary-color'
+            >
+              <path
+                d='M484.14,226.886L306.46,49.202c-5.072-5.072-11.832-7.856-19.04-7.856c-7.216,0-13.972,2.788-19.044,7.856l-16.132,16.136
+			c-5.068,5.064-7.86,11.828-7.86,19.04c0,7.208,2.792,14.2,7.86,19.264L355.9,207.526H26.58C11.732,207.526,0,219.15,0,234.002
+			v22.812c0,14.852,11.732,27.648,26.58,27.648h330.496L252.248,388.926c-5.068,5.072-7.86,11.652-7.86,18.864
+			c0,7.204,2.792,13.88,7.86,18.948l16.132,16.084c5.072,5.072,11.828,7.836,19.044,7.836c7.208,0,13.968-2.8,19.04-7.872
+			l177.68-177.68c5.084-5.088,7.88-11.88,7.86-19.1C492.02,238.762,489.228,231.966,484.14,226.886z'
+              />
+            </svg>
+          </a>
+        </Link>
       </div>
     </Container>
   )
