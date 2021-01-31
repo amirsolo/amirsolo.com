@@ -38,7 +38,7 @@ export default function Container({ children, ...customMeta }) {
         )}
       </Head>
       <Nav />
-      <main className='flex flex-col justify-center bg-gray-50 dark:bg-dark-primary max-w-3xl mx-auto py-10 px-7 sm:px-6 md:px-5'>
+      <main className='flex flex-col justify-center bg-gray-50 dark:bg-dark-primary max-w-3xl mx-auto py-8 sm:py-10 px-7 sm:px-6 md:px-5'>
         {children}
       </main>
       <Footer />

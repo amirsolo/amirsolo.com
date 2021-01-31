@@ -88,6 +88,7 @@ export default function Nav() {
           <div className='right-part flex flex-row justify-between items-center'>
             <button
               className='menu-icon w-7 h-7 cursor-pointer focus:outline-none'
+              style={{ WebkitTapHighlightColor: 'transparent' }}
               onClick={() => setIsMenuExpanded(!isMenuExpanded)}
             >
               {!isMenuExpanded ? (
