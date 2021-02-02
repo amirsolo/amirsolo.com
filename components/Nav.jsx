@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useTheme } from 'next-themes'
 import ToggleButton from './ToggleButton'
 
-import { getCurrentRoute } from '@/lib/route.js'
+import { getCurrentRoute } from '@/utils/route.js'
 
 export default function Nav() {
   const [mounted, setMounted] = useState(false)

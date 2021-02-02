@@ -1,7 +1,7 @@
 const Item = ({ title, children }) => {
   return (
     <div className='mb-5 ml-2 md:ml-3'>
-      <div className='flex items-center mb-2 text-green-700 dark:text-green-300'>
+      <div className='flex items-center mb-2 text-green-600'>
         <span className='sr-only'>Item</span>
         <svg className='h-4 w-4 mr-2' viewBox='0 0 24 24'>
           <g
@@ -15,11 +15,13 @@ const Item = ({ title, children }) => {
             <path d='M22 4L12 14.01l-3-3' />
           </g>
         </svg>
-        <p className='text-lg font-medium text-gray-800 dark:text-gray-200'>
+        <p className='text-lg font-medium text-gray-800 dark:text-gray-300'>
           {title}
         </p>
       </div>
-      <p className='text-gray-700 dark:text-gray-400 ml-6'>{children}</p>
+      <p className='tracking-tight text-gray-700 dark:text-gray-400 ml-6'>
+        {children}
+      </p>
     </div>
   )
 }

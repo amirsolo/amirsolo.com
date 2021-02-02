@@ -50,7 +50,7 @@ class Mydocument extends Document {
             content='/static/favicons/browserconfig.xml'
           />
           {/* Google Analytics */}
-          <script
+          {/* <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=G-QF0D47Y1VH`}
           />
@@ -65,7 +65,7 @@ class Mydocument extends Document {
                 });
               `
             }}
-          />
+          /> */}
         </Head>
         <body className='bg-gray-50 text-gray-900 dark:bg-dark-primary dark:text-gray-50'>
           <Main />

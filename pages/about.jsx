@@ -30,7 +30,7 @@ const About = () => {
             <source src='/static/me.mp4' type='video/mp4' />
           </video>
           <p className='w-64 text-xs text-center text-gray-400 dark:text-gray-600'>
-            Yep, this is me in my room!
+            Hello world!
           </p>
         </div>
       </div>
@@ -43,16 +43,16 @@ const About = () => {
           Feel free to email me at{' '}
           <ExternalLink
             className='inline-block mb-2 md:mb-0'
-            href='mailto:theamirsolo@gmail.com'
+            href='mailto:me@amirsolo.com'
           >
             me@amirsolo.com
           </ExternalLink>
           <br />
-          Otherwise you can find me on{' '}
+          You can also find me on{' '}
           <ExternalLink href='https://twitter.com/theamirsolo'>
             Twitter{' '}
           </ExternalLink>
-          where I talk about development and ideas that interests me.
+          where I talk about development and ideas that I find interesting.
         </p>
         <div className='socials flex flex-row mt-5'>
           <ExternalLink className='mr-5' href='https://twitter.com/theamirsolo'>
