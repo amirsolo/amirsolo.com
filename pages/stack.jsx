@@ -1,13 +1,11 @@
 import Container from '@/components/Container'
 import Image from 'next/image'
-import Devider from '@/components/Devider'
 
 const HeadLine = ({ name }) => (
   <p className='inline-block px-2 mt-4 text-lg text-gray-700 dark:text-gray-300 border-b-4 border-gray-300 dark:border-gray-600'>
     {name}
   </p>
 )
-const Spacer = () => <div className='w-full my-8'></div>
 
 const StackItem = ({ name, image, href, description }) => {
   return (
@@ -52,7 +50,7 @@ const Stack = () => {
           name='React'
           image='react.png'
           href='https://reactjs.org'
-          description={`I started using React in 2016 and loved it ever since. It's fast, efficient and easy-to-use. `}
+          description={`No need to talk about React. You probably already know what it is! I started using it in 2016 and loved it ever since.`}
         />
         <StackItem
           name='Next.js'
@@ -79,7 +77,7 @@ const Stack = () => {
           name='Node.js'
           image='nodejs.png'
           href='https://nodejs.org'
-          description={`Node.js is a JavaScript runtime. It was the tool that made me go Fullstack with JavaScript and get into back-ends and APIs.`}
+          description={`Node.js is a JavaScript runtime. It makes me able to write JavaScript on the server making Web apps and APIs.`}
         />
         <StackItem
           name='Express.js'
@@ -91,13 +89,13 @@ const Stack = () => {
           name='Firebase'
           image='firebase.png'
           href='https://firebase.google.com'
-          description={`I use Firebase on my personal projects. It's just a blessing when I wanna have a back-end up and running quickly.`}
+          description={`I use Firebase on my personal projects. It's makes it really easy for me to have a back-end up and running quickly.`}
         />
         <StackItem
           name='MongoDB'
           image='mongodb.png'
           href='https://www.mongodb.com'
-          description={`The way MongoDB works compared to relational databases makes me able to move easier and faster on projects.`}
+          description={`The way MongoDB works compared to relational databases makes me able to move easier and faster on most projects.`}
         />
         <StackItem
           name='PostgreSQL'
@@ -112,13 +110,13 @@ const Stack = () => {
           name='TypeScript'
           image='typescript.png'
           href='https://www.typescriptlang.org'
-          description={`It's JavaScript on Steroids! It's a MUST if It's a larger project. specially when there is a team working on it.`}
+          description={`It's JavaScript on Steroids! It's a MUST when I'm working on larger projects.`}
         />
         <StackItem
           name='GraphQL'
           image='graphql.png'
           href='https://graphql.org/'
-          description={`I'm not very fond of GraphQL, But I've seen how helpful it can be on larger projects comapred to REST, since you have more freedom in many ways.`}
+          description={`I'm not very fond of GraphQL, But I've seen how helpful it can be comapred to REST, since you have more freedom.`}
         />
         <StackItem
           name='Cypress'

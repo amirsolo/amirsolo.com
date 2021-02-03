@@ -149,19 +149,19 @@ const About = () => {
         </h3>
         <Item title='React'>
           <ExternalLink href='https://reactjs.org'>React</ExternalLink> is a
-          JavaScript library for building user interfaces. It's fast, efficient
-          and easy to use. I started using it in 2016 and loved it ever since.
+          JavaScript library for building user interfaces. I started using it in
+          2016 and loved it ever since.
         </Item>
         <Item title='Next.js'>
           <ExternalLink href='https://nextjs.org'>Next.js</ExternalLink> is a
           React framework. "THE React framework" as they call it, and they are
-          not wrong, It's my default choice when making apps with React.
+          not wrong, It's my default approach when making apps with React.
         </Item>
         <Item title='Node.js'>
           <ExternalLink href='https://nodejs.org'>Node.js</ExternalLink> is a
           JavaScript runtime. I use it with{' '}
           <ExternalLink href='https://expressjs.com/'>Express</ExternalLink>{' '}
-          (which is a Node.js framework) for building back-ends and APIs.
+          (which is a Node.js framework) for building web apps and APIs.
         </Item>
 
         <Link href='/stack'>
