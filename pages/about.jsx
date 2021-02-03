@@ -164,7 +164,7 @@ const About = () => {
           (which is a Node.js framework) for building back-ends and APIs.
         </Item>
 
-        <Link href='/uses'>
+        <Link href='/stack'>
           <a className='inline-block font-medium mt-1 p-1 text-primary-color border-b border-primary-color'>
             Full list
             <svg

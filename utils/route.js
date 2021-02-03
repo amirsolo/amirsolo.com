@@ -8,8 +8,8 @@ export const getCurrentRoute = (path, setCurrentRoute, setActivePath) => {
   } else if (path.startsWith('/blog')) {
     setCurrentRoute('Blog')
     setActivePath('/blog')
-  } else if (path.startsWith('/uses')) {
-    setCurrentRoute('Uses')
-    setActivePath('/uses')
+  } else if (path.startsWith('/stack')) {
+    setCurrentRoute('Stack')
+    setActivePath('/stack')
   }
 }

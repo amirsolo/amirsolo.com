@@ -70,14 +70,14 @@ const Footer = () => {
           <Link href='/'>
             <a className={linkClasses}>Home</a>
           </Link>
-          <Link href='/uses'>
-            <a className={linkClasses}>Uses</a>
+          <Link href='/blog'>
+            <a className={linkClasses}>Blog</a>
           </Link>
-          <Link href='/contact'>
+          <Link href='/stack'>
+            <a className={linkClasses}>My stack</a>
+          </Link>
+          <Link href='/about'>
             <a className={linkClasses}>Contact</a>
-          </Link>
-          <Link href='/projects'>
-            <a className={linkClasses}>Projects</a>
           </Link>
           <Link href='/rss'>
             <a className={linkClasses}>RSS</a>

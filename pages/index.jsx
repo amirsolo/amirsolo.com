@@ -107,7 +107,7 @@ export default function Home() {
 
         <Devider />
 
-        <div className='projects my-14'>
+        <div className='projects my-10'>
           <h2 className='flex flex-row items-center text-2xl sm:text-3xl mb-3 font-semibold text-gray-800 dark:text-gray-300'>
             Projects
           </h2>

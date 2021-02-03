@@ -66,15 +66,15 @@ export default function Nav() {
               About
             </a>
           </Link>
-          <Link href='/uses'>
+          <Link href='/stack'>
             <a
               className={`inline-block font-medium text-gray-800 dark:text-gray-100 rounded-md px-4 mr-1 py-2 hover:bg-primary-color hover:bg-opacity-20 ${
-                activePath === '/uses'
+                activePath === '/stack'
                   ? 'text-primary-color dark:text-primary-color'
                   : null
               }`}
             >
-              Uses
+              My stack
             </a>
           </Link>
         </div>
@@ -186,16 +186,16 @@ export default function Nav() {
               </Link>
             </li>
             <li className='w-full text-center'>
-              <Link href='/uses'>
+              <Link href='/stack'>
                 <a
                   className={`inline-block my-2 p-2 text-gray-700 dark:text-gray-200 hover:bg-primary-color hover:text-white dark:hover:bg-opacity-20 rounded w-full font-bold text-2xl ${
-                    activePath === '/uses'
+                    activePath === '/stack'
                       ? 'text-primary-color  dark:text-primary-color'
                       : null
                   }`}
                   onClick={() => setIsMenuExpanded(false)}
                 >
-                  Uses
+                  My stack
                 </a>
               </Link>
             </li>
