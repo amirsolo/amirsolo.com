@@ -37,12 +37,12 @@ const StackItem = ({ name, image, href, description }) => {
 
 const Stack = () => {
   return (
-    <Container title='My Tech Stack - Amir Solo'>
+    <Container title='My Tech Stack – Amir Solo'>
       <h1 className='text-3xl md:text-4xl font-bold text-center text-gray-700 dark:text-gray-300'>
         My Stack
       </h1>
       <p className='text-center text-lg mt-2 text-gray-700 dark:text-gray-300'>
-        The tech stack I use the most to build apps and software.
+        The tech stack I'm currently using to build apps and software.
       </p>
       <div className='stack-list mt-8 sm:mt-16 sm:px-8'>
         <HeadLine name='Front End' />
@@ -50,7 +50,8 @@ const Stack = () => {
           name='React'
           image='react.png'
           href='https://reactjs.org'
-          description={`No need to talk about React. You probably already know what it is! I started using it in 2018 and loved it ever since.`}
+          description={`React is a
+          JavaScript library for building UIs. You probably knew that already :) I started using it in 2018 and loved it ever since.`}
         />
         <StackItem
           name='Next.js'
@@ -89,7 +90,7 @@ const Stack = () => {
           name='Firebase'
           image='firebase.png'
           href='https://firebase.google.com'
-          description={`I use Firebase on my personal projects. It's makes it really easy for me to have a back-end up and running quickly.`}
+          description={`I use Firebase on my personal projects. It makes it really easy to have a back-end up and running quickly.`}
         />
         <StackItem
           name='MongoDB'

@@ -6,7 +6,9 @@ import BlogCard from '@/components/BlogCard'
 import ProjectCard from '@/components/ProjectCard'
 import Devider from '@/components/Devider'
 
-export default function Home() {
+import { getAllFilesFrontMatter } from '@/utils/mdx'
+
+const Home = ({ recentPosts }) => {
   return (
     <Container>
       <div>
@@ -82,27 +84,9 @@ export default function Home() {
           <h2 className='text-2xl sm:text-3xl mb-3 font-semibold text-gray-800 dark:text-gray-300'>
             Recent Posts
           </h2>
-          <BlogCard
-            title='The Fist Post on My Blog'
-            summary='This is going to be the first blog post on my personal website where I basically talk about whatever just to display it on the main page.'
-            publishedAt='Jan 23, 2021'
-            slug='the-first-post-on-my-blog'
-            home
-          />
-          <BlogCard
-            title="Second Post on Amir's Blog"
-            summary='Yep, This is the second dummy post on the home page. Again nothing to read, Just for aesthetics :)'
-            publishedAt='Jan 19, 2021'
-            slug='the-first-post-on-my-blog'
-            home
-          />
-          <BlogCard
-            title='Hello Beautiful World'
-            summary='Tempora veritatis ut ipsum saepe velit dolores repellendus commodi! Perspiciatis aspernatur in minus quos sapiente labore, sunt a quae praesentium obcaecati explicabo!'
-            publishedAt='Jan 16, 2021'
-            slug='the-first-post-on-my-blog'
-            home
-          />
+          {recentPosts.map((post) => (
+            <BlogCard key={post.slug} {...post} />
+          ))}
         </div>
 
         <Devider />
@@ -128,3 +112,19 @@ export default function Home() {
     </Container>
   )
 }
+
+export async function getStaticProps() {
+  const posts = await getAllFilesFrontMatter('blog')
+
+  // filter the last 3 blog posts
+  const filteredPosts = posts
+    .sort(
+      (a, b) =>
+        Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
+    )
+    .slice(0, 3)
+
+  return { props: { recentPosts: filteredPosts } }
+}
+
+export default Home
