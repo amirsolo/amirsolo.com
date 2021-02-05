@@ -38,10 +38,10 @@ const StackItem = ({ name, image, href, description }) => {
 const Stack = () => {
   return (
     <Container title='My Tech Stack - Amir Solo'>
-      <h1 className='text-3xl font-bold text-center text-gray-700 dark:text-gray-300'>
+      <h1 className='text-3xl md:text-4xl font-bold text-center text-gray-700 dark:text-gray-300'>
         My Stack
       </h1>
-      <p className='text-center text-lg mt-2 text-gray-600 dark:text-gray-400'>
+      <p className='text-center text-lg mt-2 text-gray-700 dark:text-gray-300'>
         The tech stack I use the most to build apps and software.
       </p>
       <div className='stack-list mt-8 sm:mt-16 sm:px-8'>
@@ -50,7 +50,7 @@ const Stack = () => {
           name='React'
           image='react.png'
           href='https://reactjs.org'
-          description={`No need to talk about React. You probably already know what it is! I started using it in 2016 and loved it ever since.`}
+          description={`No need to talk about React. You probably already know what it is! I started using it in 2018 and loved it ever since.`}
         />
         <StackItem
           name='Next.js'

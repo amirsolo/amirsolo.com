@@ -1,9 +1,12 @@
+import { useState } from 'react'
 import Link from 'next/link'
 import Container from '@/components/Container'
 import Item from '@/components/Item'
 import ExternalLink from '@/components/ExternalLink'
 
 const About = () => {
+  const [isLoading, setIsLoading] = useState(true)
+
   return (
     <Container title='About me - Amir Solo'>
       <h1 className='text-2xl md:text-4xl font-bold text-gray-700 dark:text-gray-300'>
@@ -24,8 +27,18 @@ const About = () => {
           </ExternalLink>
         </p>
 
-        <div className='w-64 flex flex-col justify-center items-center my-8 md:my-0'>
-          <video loop autoPlay muted className='rounded-lg shadow-2xl'>
+        <div
+          className={`w-64 flex flex-col justify-center items-center my-8 md:my-0 ${
+            isLoading ? 'animate-pulse' : ''
+          }`}
+        >
+          <video
+            loop
+            autoPlay
+            muted
+            className='rounded-lg shadow-2xl'
+            onCanPlay={() => setIsLoading(false)}
+          >
             <source src='/static/me.webm' type='video/webm' />
             <source src='/static/me.mp4' type='video/mp4' />
           </video>
@@ -150,7 +163,7 @@ const About = () => {
         <Item title='React'>
           <ExternalLink href='https://reactjs.org'>React</ExternalLink> is a
           JavaScript library for building user interfaces. I started using it in
-          2016 and loved it ever since.
+          2018 and loved it ever since.
         </Item>
         <Item title='Next.js'>
           <ExternalLink href='https://nextjs.org'>Next.js</ExternalLink> is a
