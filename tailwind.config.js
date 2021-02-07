@@ -1,4 +1,8 @@
-const { fontFamily } = require('tailwindcss/defaultTheme')
+const {
+  fontFamily,
+  borderColor,
+  borderWidth
+} = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: [
@@ -56,7 +60,9 @@ module.exports = {
             strong: { color: theme('colors.gray.200') },
             code: {
               color: theme('colors.gray.300'),
-              backgroundColor: theme('colors.dark-secondary')
+              backgroundColor: theme('colors.dark-secondary'),
+              borderColor: theme('colors.gray.800'),
+              borderWidth: '1px'
             },
             blockQuote: {
               borderLeftColor: theme('colors.gray.600'),
