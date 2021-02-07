@@ -30,6 +30,9 @@ module.exports = {
             'h1,h2,h3,h4,h5,h6': {
               color: theme('colors.gray.700')
             },
+            h2: {
+              marginBottom: theme('spacing.4')
+            },
             code: {
               color: theme('colors.gray.700'),
               backgroundColor: theme('colors.gray.200'),
@@ -59,9 +62,15 @@ module.exports = {
               borderLeftColor: theme('colors.gray.600'),
               color: theme('colors.gray.300')
             },
+            hr: { borderColor: theme('colors.gray.800') },
             ul: {
               li: {
                 '&:before': { backgroundColor: theme('colors.gray.600') }
+              }
+            },
+            ol: {
+              li: {
+                '&:before': { color: theme('colors.gray.500') }
               }
             }
           }
