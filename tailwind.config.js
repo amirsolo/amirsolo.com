@@ -1,8 +1,4 @@
-const {
-  fontFamily,
-  borderColor,
-  borderWidth
-} = require('tailwindcss/defaultTheme')
+const { fontFamily } = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: [
