@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const { fontFamily } = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: [
@@ -15,34 +15,54 @@ module.exports = {
         'dark-secondary': '#161b22'
       },
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans]
+        sans: ['Inter', ...fontFamily.sans]
       },
       typography: (theme) => ({
         DEFAULT: {
           css: {
             color: theme('colors.gray.700'),
-            blockquote: {
-              color: theme('colors.green.300')
+            a: {
+              color: theme('colors.primary-color'),
+              '&:hover': {
+                color: theme('colors.blue.600')
+              }
             },
-            'h1,h2,h3': {
-              color: theme('colors.gray.800')
+            'h1,h2,h3,h4,h5,h6': {
+              color: theme('colors.gray.700')
             },
-            'h4,h5,h6': {
-              color: theme('colors.grat.700')
-            }
+            code: {
+              color: theme('colors.gray.700'),
+              backgroundColor: theme('colors.gray.200'),
+              borderRadius: theme('spacing.1'),
+              padding: theme('spacing.1')
+            },
+            blockQuote: {
+              borderLeftColor: theme('colors.gray.300'),
+              color: theme('colors.gray.700')
+            },
+            'blockquote p:first-of-type::before': false,
+            'blockquote p:last-of-type::after': false
           }
         },
         dark: {
           css: {
             color: theme('colors.gray.300'),
-            blockquote: {
-              color: theme('colors.red.500')
+            'h1,h2,h3,h4,h5,h6': {
+              color: theme('colors.gray.300')
             },
-            'h1,h2,h3': {
-              color: theme('colors.gray.200')
+            strong: { color: theme('colors.gray.200') },
+            code: {
+              color: theme('colors.gray.300'),
+              backgroundColor: theme('colors.dark-secondary')
             },
-            'h4,h5,h6': {
-              color: theme('colors.grat.300')
+            blockQuote: {
+              borderLeftColor: theme('colors.gray.600'),
+              color: theme('colors.gray.300')
+            },
+            ul: {
+              li: {
+                '&:before': { backgroundColor: theme('colors.gray.600') }
+              }
             }
           }
         }

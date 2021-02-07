@@ -35,3 +35,12 @@ html {
   transition: background-color 0.1 ease-in-out;
   @apply bg-gray-50 dark:bg-dark-primary bg-opacity-70 dark:bg-opacity-70;
 }
+
+/* pre::-webkit-scrollbar {
+  display: none;
+}
+
+pre {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+} */
