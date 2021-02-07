@@ -39,7 +39,7 @@ module.exports = {
               borderRadius: theme('spacing.1'),
               padding: theme('spacing.1')
             },
-            blockQuote: {
+            blockquote: {
               borderLeftColor: theme('colors.gray.300'),
               color: theme('colors.gray.700')
             },
@@ -60,7 +60,7 @@ module.exports = {
               borderColor: theme('colors.gray.800'),
               borderWidth: '1px'
             },
-            blockQuote: {
+            blockquote: {
               borderLeftColor: theme('colors.gray.600'),
               color: theme('colors.gray.300')
             },
