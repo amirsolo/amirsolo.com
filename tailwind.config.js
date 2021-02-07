@@ -1,5 +1,57 @@
 const { fontFamily } = require('tailwindcss/defaultTheme')
 
+// Customized @tailwind/typography properties
+const prose = (theme) => ({
+  DEFAULT: {
+    css: {
+      color: theme('colors.gray.700'),
+      a: {
+        color: theme('colors.primary-color'),
+        textDecoration: 'none',
+        '&:hover': {
+          color: theme('colors.blue.500')
+        }
+      },
+      'h1,h2,h3,h4,h5,h6': {
+        color: theme('colors.gray.700')
+      },
+      h2: {
+        marginBottom: theme('spacing.4')
+      },
+      blockquote: {
+        borderLeftColor: theme('colors.gray.300'),
+        color: theme('colors.gray.700')
+      },
+      'blockquote p:first-of-type::before': false,
+      'blockquote p:last-of-type::after': false
+    }
+  },
+  dark: {
+    css: {
+      color: theme('colors.gray.300'),
+      'h1,h2,h3,h4,h5,h6': {
+        color: theme('colors.gray.300')
+      },
+      strong: { color: theme('colors.gray.200') },
+      blockquote: {
+        borderLeftColor: theme('colors.gray.600'),
+        color: theme('colors.gray.300')
+      },
+      hr: { borderColor: theme('colors.gray.800') },
+      ul: {
+        li: {
+          '&:before': { backgroundColor: theme('colors.gray.600') }
+        }
+      },
+      ol: {
+        li: {
+          '&:before': { color: theme('colors.gray.500') }
+        }
+      }
+    }
+  }
+})
+
 module.exports = {
   purge: [
     './pages/**/*.{js,jsx}',
@@ -17,67 +69,7 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', ...fontFamily.sans]
       },
-      typography: (theme) => ({
-        DEFAULT: {
-          css: {
-            color: theme('colors.gray.700'),
-            a: {
-              color: theme('colors.primary-color'),
-              '&:hover': {
-                color: theme('colors.blue.600')
-              }
-            },
-            'h1,h2,h3,h4,h5,h6': {
-              color: theme('colors.gray.700')
-            },
-            h2: {
-              marginBottom: theme('spacing.4')
-            },
-            code: {
-              color: theme('colors.gray.700'),
-              backgroundColor: theme('colors.gray.200'),
-              borderRadius: theme('spacing.1'),
-              padding: theme('spacing.1')
-            },
-            blockquote: {
-              borderLeftColor: theme('colors.gray.300'),
-              color: theme('colors.gray.700')
-            },
-            'blockquote p:first-of-type::before': false,
-            'blockquote p:last-of-type::after': false
-          }
-        },
-        dark: {
-          css: {
-            color: theme('colors.gray.300'),
-            'h1,h2,h3,h4,h5,h6': {
-              color: theme('colors.gray.300')
-            },
-            strong: { color: theme('colors.gray.200') },
-            code: {
-              color: theme('colors.gray.300'),
-              backgroundColor: theme('colors.dark-secondary'),
-              borderColor: theme('colors.gray.800'),
-              borderWidth: '1px'
-            },
-            blockquote: {
-              borderLeftColor: theme('colors.gray.600'),
-              color: theme('colors.gray.300')
-            },
-            hr: { borderColor: theme('colors.gray.800') },
-            ul: {
-              li: {
-                '&:before': { backgroundColor: theme('colors.gray.600') }
-              }
-            },
-            ol: {
-              li: {
-                '&:before': { color: theme('colors.gray.500') }
-              }
-            }
-          }
-        }
-      })
+      typography: prose
     }
   },
   variants: {

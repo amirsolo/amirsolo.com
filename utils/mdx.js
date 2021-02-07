@@ -2,6 +2,8 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import renderToString from 'next-mdx-remote/render-to-string'
+import mdxPrism from 'mdx-prism'
+import readingTime from 'reading-time'
 
 import MDXComponents from '@/components/MDXComponents'
 
@@ -47,12 +49,16 @@ export async function getFileBySlug(type, slug) {
   const { content, data } = matter(file)
 
   const mdxSource = await renderToString(content, {
-    components: MDXComponents
+    components: MDXComponents,
+    mdxOptions: {
+      rehypePlugins: [mdxPrism]
+    }
   })
 
   return {
     source: mdxSource,
     frontMatter: {
+      readingTime: readingTime(content),
       slug: slug,
       ...data
     }

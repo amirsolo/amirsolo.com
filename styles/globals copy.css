@@ -51,7 +51,7 @@ pre {
 }
 
 .prose code {
-  @apply text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-dark-secondary border border-transparent dark:border-gray-800 rounded-md py-1 px-0.5;
+  @apply text-gray-300 rounded-md border border-gray-800 bg-dark-secondary;
 }
 
 .token.comment,
@@ -62,7 +62,8 @@ pre {
 }
 
 .token.punctuation {
-  @apply text-gray-300;
+  color: #f8f8f2;
+  @apply text-gray-200;
 }
 
 .token.property,
@@ -91,7 +92,7 @@ pre {
 .token.entity,
 .token.url,
 .token.variable {
-  @apply text-gray-400;
+  @apply text-gray-200;
 }
 
 .token.atrule,
@@ -112,5 +113,5 @@ pre {
 
 code[class*='language-'],
 pre[class*='language-'] {
-  @apply text-gray-300;
+  @apply text-gray-50;
 }
