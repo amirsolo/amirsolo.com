@@ -32,10 +32,10 @@ const Blog = ({ posts }) => {
       <h1 className='text-4xl font-bold text-center text-gray-700 dark:text-gray-300'>
         Blog
       </h1>
-      <p className='text-center text-lg mt-2 text-gray-700 dark:text-gray-300'>
+      <p className='text-center sm:text-lg mt-2 text-gray-700 dark:text-gray-300'>
         Thoughts and ideas about software, teck and sometimes my personal life.
       </p>
-      <div className='search-box relative my-8'>
+      <div className='search-box relative my-4 sm:my-8'>
         <label htmlFor='search' className='absolute top-3 right-4'>
           <svg
             xmlns='http://www.w3.org/2000/svg'

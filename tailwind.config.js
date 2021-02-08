@@ -9,7 +9,8 @@ const prose = (theme) => ({
         color: theme('colors.primary-color'),
         textDecoration: 'none',
         '&:hover': {
-          color: theme('colors.blue.500')
+          // color: theme('colors.blue.500'),
+          textDecoration: 'underline'
         }
       },
       'h1,h2,h3,h4,h5,h6': {

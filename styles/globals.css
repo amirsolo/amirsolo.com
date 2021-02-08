@@ -36,12 +36,16 @@ html {
   @apply bg-gray-50 dark:bg-dark-primary bg-opacity-70 dark:bg-opacity-70;
 }
 
+.prose img {
+  @apply my-0;
+}
+
 /* hide horizontal scrollbar */
-pre::-webkit-scrollbar {
+.prose pre::-webkit-scrollbar {
   display: none;
 }
 
-pre {
+.prose pre {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -54,6 +58,7 @@ pre {
   @apply text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-800 rounded-md py-1 px-0.5;
 }
 
+/* Custom styles for prism */
 .token.comment,
 .token.prolog,
 .token.doctype,
@@ -113,4 +118,12 @@ pre {
 code[class*='language-'],
 pre[class*='language-'] {
   @apply text-gray-700 dark:text-gray-300 dark:bg-dark-secondary;
+}
+
+.remark-code-title {
+  @apply text-sm font-semibold font-mono rounded-t px-5 py-3 text-gray-800 dark:text-gray-200 bg-gray-200 dark:bg-gray-800 border border-b-0 border-gray-300 dark:border-gray-800;
+}
+
+.remark-code-title + pre {
+  @apply mt-0 rounded-t-none border-t-0;
 }

@@ -22,7 +22,7 @@ const Home = ({ recentPosts }) => {
           </h2>
           <p className='text-lg md:font-medium text-left md:text-center  text-gray-700 dark:text-gray-300 mb-3'>
             I write on my{' '}
-            <Link href='/about'>
+            <Link href='/blog'>
               <a className='text-primary-color'>Blog</a>
             </Link>{' '}
             and{' '}

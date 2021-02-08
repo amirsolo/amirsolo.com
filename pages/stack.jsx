@@ -41,7 +41,7 @@ const Stack = () => {
       <h1 className='text-3xl md:text-4xl font-bold text-center text-gray-700 dark:text-gray-300'>
         My Stack
       </h1>
-      <p className='text-center text-lg mt-2 text-gray-700 dark:text-gray-300'>
+      <p className='text-center sm:text-lg mt-2 text-gray-700 dark:text-gray-300'>
         The tech stack I'm currently using to build apps and software.
       </p>
       <div className='stack-list mt-8 sm:mt-16 sm:px-8'>
