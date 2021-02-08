@@ -18,6 +18,7 @@ export default function Container({ children, ...customMeta }) {
       <Head>
         <title>{meta.title}</title>
         <meta name='robots' content='follow, index' />
+        <link rel='canonical' href={`https://amirsolo.com${router.asPath}`} />
         <meta content={meta.description} name='description' />
         <meta
           property='og:url'
