@@ -67,15 +67,18 @@ const Footer = () => {
         </div>
 
         <div className='pages-links flex flex-row justify-center items-center mt-5'>
-          <Link href='/notes'>
+          {/* <Link href='/notes'>
             <a className={linkClasses}>Notes</a>
           </Link>
           <Link href='/about'>
             <a className={linkClasses}>Contact</a>
           </Link>
-          <Link href='/rss'>
+          <Link href='/#'>
             <a className={linkClasses}>RSS</a>
-          </Link>
+          </Link> */}
+          <p className='text-sm font-medium text-gray-600 dark:text-gray-400'>
+            2021 &copy; Amir Solo
+          </p>
         </div>
       </footer>
     </div>

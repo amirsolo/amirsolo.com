@@ -1,0 +1,27 @@
+{
+  "headers": [
+    {
+      "source": "/fonts/inter-var-latin.woff2",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/projects/bookimy",
+      "destination": "https://bookimy.com"
+    },
+    {
+      "source": "/projects/youtube",
+      "destination": "https://www.youtube.com/channel/UCL0xUrtfYJfUqpDejChZovg"
+    },
+    {
+      "source": "/youtube",
+      "destination": "https://www.youtube.com/channel/UCL0xUrtfYJfUqpDejChZovg"
+    }
+  ]
+}
