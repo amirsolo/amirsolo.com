@@ -76,9 +76,9 @@ const Footer = () => {
           <Link href='/#'>
             <a className={linkClasses}>RSS</a>
           </Link> */}
-          <p className='text-sm font-medium text-gray-600 dark:text-gray-400'>
+          {/* <p className='text-sm font-medium text-gray-600 dark:text-gray-400'>
             2021 &copy; Amir Solo
-          </p>
+          </p> */}
         </div>
       </footer>
     </div>
