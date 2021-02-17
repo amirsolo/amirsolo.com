@@ -66,7 +66,7 @@ const Footer = () => {
           </ExternalLink>
         </div>
 
-        <div className='pages-links flex flex-row justify-center items-center mt-5'>
+        <div className='pages-links flex flex-row justify-center items-center'>
           {/* <Link href='/notes'>
             <a className={linkClasses}>Notes</a>
           </Link>

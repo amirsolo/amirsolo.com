@@ -19,7 +19,7 @@ export default function BlogLayout({ frontMatter, children }) {
       <article className=''>
         <div className='header mb-10'>
           <h1 className='text-4xl sm:text-5xl font-bold'>{title}</h1>
-          <p className='pl-3 border-l-4 border-gray-400 font-medium flex flex-row items-center justify-start mt-5 text-xs sm:text-base text-gray-600 dark:text-gray-400'>
+          <p className='pl-3 border-l-2 border-gray-400 dark:border-gray-600 font-medium flex flex-row items-center justify-start mt-5 text-xs sm:text-base text-gray-600 dark:text-gray-400'>
             {readingTime.text}
           </p>
         </div>
