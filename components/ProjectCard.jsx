@@ -1,7 +1,6 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
-const ProjectCard = ({ title, description, slug, logo }) => {
+const ProjectCard = ({ title, description, logo }) => {
   return (
     <a
       href={

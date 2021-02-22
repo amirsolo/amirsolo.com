@@ -98,13 +98,13 @@ const Home = ({ recentPosts }) => {
           <ProjectCard
             title='Bookimy'
             logo='/static/images/projects/bookimy-logo.png'
-            description="A powerful and opinionated journaling app I'm making with NodeJS and React. Try it It will make your life easier."
+            description="A cusotimized and personal journaling app I'm making with NodeJS and React. I'm still working on it, So It's not quite ready yet."
             slug='bookimy'
           />
           <ProjectCard
             title='Youtube'
             logo='/static/images/projects/youtube-logo.png'
-            description='I make videos on youtube about software development and the process I go through to make an app.'
+            description='I make videos on Youtube about software development and coding. Recently started a series called "Coding Vlog" where I show the process I go through when making apps and software.'
             slug='youtube'
           />
         </div>
