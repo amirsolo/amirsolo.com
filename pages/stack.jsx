@@ -129,7 +129,7 @@ const Stack = () => {
           name='Jest'
           image='jest.png'
           href='https://jestjs.io/'
-          description={`Jest is my go-to unit testing framework. Don't get me wrong though! I still don't like writing tests :) But if I have to, I use Jest.`}
+          description={`Jest is my go-to unit testing framework. Don't get me wrong though, I still don't like writing tests :) But if I have to, I'll use Jest.`}
         />
       </div>
     </Container>

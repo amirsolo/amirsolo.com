@@ -27,7 +27,7 @@ export default function BlogLayout({ frontMatter, children }) {
           {children}
         </div>
 
-        <div className='mt-14 pr-4 sm:border-r-4 border-gray-400 flex flex-row justify-center sm:justify-end text-gray-700 dark:text-gray-300'>
+        <div className='text-sm sm:text-normal mt-14 pr-4 sm:border-r-4 border-gray-400 flex flex-row justify-center sm:justify-end text-gray-700 dark:text-gray-300'>
           <p>{format(parseISO(publishedAt), 'MMMM dd, yyyy')} • </p>
           <ExternalLink
             href={getGithubEditUrl(slug)}
