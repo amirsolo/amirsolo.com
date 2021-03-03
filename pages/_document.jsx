@@ -49,23 +49,13 @@ class Mydocument extends Document {
             name='msapplication-config'
             content='/static/favicons/browserconfig.xml'
           />
-          {/* Google Analytics */}
-          {/* <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=G-QF0D47Y1VH`}
-          />
+          {/* Analytics */}
           <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'G-QF0D47Y1VH', {
-                  page_path: window.location.pathname,
-                });
-              `
-            }}
-          /> */}
+            async
+            defer
+            src='https://beampipe.io/js/tracker.js'
+            data-beampipe-domain='amirsolo.com'
+          ></script>
         </Head>
         <body className='bg-gray-50 text-gray-900 dark:bg-dark-primary dark:text-gray-50'>
           <Main />
