@@ -3,6 +3,11 @@ import Container from '@/components/Container'
 import Item from '@/components/Item'
 import ExternalLink from '@/components/ExternalLink'
 
+// Track analytics goal
+const trackGoal = (title) => {
+  window.beampipe(title)
+}
+
 const About = () => {
   return (
     <Container title='About Me – Amir Solo'>
@@ -49,7 +54,10 @@ const About = () => {
           </ExternalLink>
           <br />
           You can also find me on{' '}
-          <ExternalLink href='https://twitter.com/theamirsolo'>
+          <ExternalLink
+            href='https://twitter.com/theamirsolo'
+            onClick={(e) => trackGoal('Twitter')}
+          >
             Twitter{' '}
           </ExternalLink>
           where I talk about development and ideas that I find interesting.
@@ -70,6 +78,7 @@ const About = () => {
           <ExternalLink
             className='mr-5'
             href='https://www.youtube.com/channel/UCL0xUrtfYJfUqpDejChZovg'
+            onClick={(e) => trackGoal('Youtube')}
           >
             <span className='sr-only'>Youtube</span>
             <svg
