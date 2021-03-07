@@ -63,7 +63,11 @@ const About = () => {
           where I talk about development and ideas that I find interesting.
         </p>
         <div className='socials flex flex-row mt-5'>
-          <ExternalLink className='mr-5' href='https://twitter.com/theamirsolo'>
+          <ExternalLink
+            className='mr-5'
+            href='https://twitter.com/theamirsolo'
+            onClick={(e) => trackGoal('Twitter')}
+          >
             <span className='sr-only'>Twitter</span>
             <svg
               viewBox='0 0 512 512'
@@ -126,7 +130,10 @@ const About = () => {
 
         <Item title='I make videos on Youtube'>
           In my{' '}
-          <ExternalLink href='https://www.youtube.com/channel/UCL0xUrtfYJfUqpDejChZovg'>
+          <ExternalLink
+            href='https://www.youtube.com/channel/UCL0xUrtfYJfUqpDejChZovg'
+            onClick={(e) => trackGoal('Youtube')}
+          >
             channel
           </ExternalLink>{' '}
           I share some ideas and knowledge I learn throughout the process of
