@@ -1,7 +1,9 @@
 import Image from 'next/image'
-import dynamic from 'next/dynamic'
 
-const trackGoal = dynamic(() => import('@/utils/trackGoal'), { ssr: false })
+const trackGoal = (title) => {
+  console.log(title)
+  window.beampipe(title)
+}
 
 const ProjectCard = ({ title, description, logo }) => {
   return (

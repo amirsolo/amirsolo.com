@@ -1,4 +1,5 @@
 const trackGoal = (title) => {
+  console.log()
   window.beampipe(title)
 }
 
