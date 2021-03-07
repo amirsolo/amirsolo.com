@@ -1,5 +1,9 @@
 import Image from 'next/image'
 
+const trackGoal = (title) => {
+  window.beampipe(title)
+}
+
 const ProjectCard = ({ title, description, logo }) => {
   return (
     <a
@@ -11,6 +15,7 @@ const ProjectCard = ({ title, description, logo }) => {
       rel='noopener noreferrer'
       target='_blank'
       className='flex flex-col sm:flex-row sm:justify-start justify-center items-center my-8 p-4 rounded-md shadow hover:shadow-md dark:bg-dark-secondary group'
+      onClick={(e) => trackGoal(title)}
     >
       <div>
         <div className='icon-container w-12 h-12 flex flex-row justify-center items-center rounded-full bg-gray-200 dark:bg-gray-800'>
