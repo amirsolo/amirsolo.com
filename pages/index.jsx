@@ -8,6 +8,11 @@ import Devider from '@/components/Devider'
 
 import { getAllFilesFrontMatter } from '@/utils/mdx'
 
+// Track analytics goal
+const trackGoal = (title) => {
+  window.beampipe(title)
+}
+
 const Home = ({ recentPosts }) => {
   return (
     <Container>
@@ -31,6 +36,7 @@ const Home = ({ recentPosts }) => {
               rel='noopener noreferrer'
               href='https://twitter.com/theamirsolo'
               className='text-primary-color'
+              onClick={(e) => trackGoal('Twitter')}
             >
               Twitter.
             </a>
@@ -40,6 +46,7 @@ const Home = ({ recentPosts }) => {
               rel='noopener noreferrer'
               href='https://www.youtube.com/channel/UCL0xUrtfYJfUqpDejChZovg'
               className='text-primary-color'
+              onClick={(e) => trackGoal('Youtube')}
             >
               Youtube.
             </a>

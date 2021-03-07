@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
+// Track analytics goal
 const trackGoal = (title) => {
-  console.log(title)
   window.beampipe(title)
 }
 
