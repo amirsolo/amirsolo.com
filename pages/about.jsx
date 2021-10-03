@@ -22,7 +22,7 @@ const About = () => {
           great passion for making different things. That's why I spend a lot of
           time building software and apps.
           <br />
-          And I spend most of my free time playing basketball, working out, playing guitar, and watching
+          And I spend most of my free time working out, playing guitar, and watching
           Youtube (a lot!) and{' '}
           <ExternalLink href='https://www.imdb.com/title/tt0108778/'>
             Friends.
