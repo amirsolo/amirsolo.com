@@ -22,11 +22,12 @@ const About = () => {
           great passion for making different things. That's why I spend a lot of
           time building software and apps.
           <br />
-          And I spend my free time playing basketball, working out, and watching
-          Youtube and{' '}
+          And I spend most of my free time playing basketball, working out, playing guitar, and watching
+          Youtube (a lot!) and{' '}
           <ExternalLink href='https://www.imdb.com/title/tt0108778/'>
             Friends.
           </ExternalLink>
+
         </p>
 
         <div className='w-64 flex flex-col justify-center items-center my-8 md:my-0'>
