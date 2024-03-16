@@ -44,9 +44,7 @@ export default function Container({ children, ...customMeta }) {
         textAlign: 'center',
         padding: '10px 0',
         fontSize: '16px',
-        fontWeight: 'bold',
-        width: '100%',
-        height: '60px',
+        fontWeight: 'bold'
       }}>
         Heads up! This site was crafted years ago and stands as an archive. For the latest about me, check out my <a href="https://www.linkedin.com/in/amirsolo/" style={{color: '#0077b5'}}>LinkedIn</a>.
       </div>
